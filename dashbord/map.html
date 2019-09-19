@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05c78658773e43d1900bf4490a6796ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+
+<body>    
+    
+            <div class="folium-map" id="map_05c78658773e43d1900bf4490a6796ee" ></div>
+        
+</body>
+<script>    
+    
+            var map_05c78658773e43d1900bf4490a6796ee = L.map(
+                "map_05c78658773e43d1900bf4490a6796ee",
+                {
+                    center: [21.1458, 79.0882],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a21e32973b4b4f7b8629e337ab993e3a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var marker_b2c5887a41604141b204b724000df36f = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var icon_f07bd54def1249f1b2e89cfd958ed6a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b2c5887a41604141b204b724000df36f.setIcon(icon_f07bd54def1249f1b2e89cfd958ed6a7);
+        
+    
+        var popup_194e0b278c5d4021ba7ecb0492317193 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0fffb4bb59e4439acb40594976fc24e = $(`<div id="html_e0fffb4bb59e4439acb40594976fc24e" style="width: 100.0%; height: 100.0%;"><strong> Mumbai Office </strong></div>`)[0];
+            popup_194e0b278c5d4021ba7ecb0492317193.setContent(html_e0fffb4bb59e4439acb40594976fc24e);
+        
+
+        marker_b2c5887a41604141b204b724000df36f.bindPopup(popup_194e0b278c5d4021ba7ecb0492317193)
+        ;
+
+        
+    
+    
+            marker_b2c5887a41604141b204b724000df36f.bindTooltip(
+                `<div>
+                     Head Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b428d846c779447691557f94dcdbb2b6 = L.marker(
+                [21.1702, 72.8311],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_c320e9fa33cf4675ad83e5b9d8bf9f22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cda18c9f1124718bfe8c83de3886487 = $(`<div id="html_4cda18c9f1124718bfe8c83de3886487" style="width: 100.0%; height: 100.0%;"><strong> Surat Office </strong></div>`)[0];
+            popup_c320e9fa33cf4675ad83e5b9d8bf9f22.setContent(html_4cda18c9f1124718bfe8c83de3886487);
+        
+
+        marker_b428d846c779447691557f94dcdbb2b6.bindPopup(popup_c320e9fa33cf4675ad83e5b9d8bf9f22)
+        ;
+
+        
+    
+    
+            marker_b428d846c779447691557f94dcdbb2b6.bindTooltip(
+                `<div>
+                      Surat Branch Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e51e96735a14855b0b4988a061f17d2 = L.marker(
+                [23.2599, 77.4126],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var icon_afe8ca970b214783a9ded39f5f3760a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6e51e96735a14855b0b4988a061f17d2.setIcon(icon_afe8ca970b214783a9ded39f5f3760a4);
+        
+    
+        var popup_997a88758f154bbe81a9f506ad83641d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef8798367f494f0ca2edadd631eb532b = $(`<div id="html_ef8798367f494f0ca2edadd631eb532b" style="width: 100.0%; height: 100.0%;"><strong> Bhopal Branch Office </strong></div>`)[0];
+            popup_997a88758f154bbe81a9f506ad83641d.setContent(html_ef8798367f494f0ca2edadd631eb532b);
+        
+
+        marker_6e51e96735a14855b0b4988a061f17d2.bindPopup(popup_997a88758f154bbe81a9f506ad83641d)
+        ;
+
+        
+    
+    
+            marker_6e51e96735a14855b0b4988a061f17d2.bindTooltip(
+                `<div>
+                     Bhopal Branch Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a71272877204d0fb99bb8f524810d3d = L.marker(
+                [18.5204, 73.8567],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var icon_ad1a8fb043dd43c6be82d9614ada26b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4a71272877204d0fb99bb8f524810d3d.setIcon(icon_ad1a8fb043dd43c6be82d9614ada26b0);
+        
+    
+        var popup_1535771fda5f45a6a0d90cfd80d22811 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c881a1855838489c9cd10ccc34112364 = $(`<div id="html_c881a1855838489c9cd10ccc34112364" style="width: 100.0%; height: 100.0%;"><strong> Pune Office </strong></div>`)[0];
+            popup_1535771fda5f45a6a0d90cfd80d22811.setContent(html_c881a1855838489c9cd10ccc34112364);
+        
+
+        marker_4a71272877204d0fb99bb8f524810d3d.bindPopup(popup_1535771fda5f45a6a0d90cfd80d22811)
+        ;
+
+        
+    
+    
+            marker_4a71272877204d0fb99bb8f524810d3d.bindTooltip(
+                `<div>
+                     Maharastra Region Head Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b3ab7e9e21b43c7b9b183499dce1f37 = L.marker(
+                [19.9975, 73.7898],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_6385af50010a4fa3a9346c99bf2d4fb6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_285af2528c41461299e6ff610fe456b3 = $(`<div id="html_285af2528c41461299e6ff610fe456b3" style="width: 100.0%; height: 100.0%;"><strong> Nashik Office </strong></div>`)[0];
+            popup_6385af50010a4fa3a9346c99bf2d4fb6.setContent(html_285af2528c41461299e6ff610fe456b3);
+        
+
+        marker_7b3ab7e9e21b43c7b9b183499dce1f37.bindPopup(popup_6385af50010a4fa3a9346c99bf2d4fb6)
+        ;
+
+        
+    
+    
+            marker_7b3ab7e9e21b43c7b9b183499dce1f37.bindTooltip(
+                `<div>
+                     Nashik Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d7a901648ea41429b4f0929fcb2cb42 = L.marker(
+                [19.2183, 72.9781],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_f1a70659f85843c1a5bde47ca9c23cde = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b889f2c619c94bbbb71bfe4589aa4049 = $(`<div id="html_b889f2c619c94bbbb71bfe4589aa4049" style="width: 100.0%; height: 100.0%;"><strong> Thane Office </strong></div>`)[0];
+            popup_f1a70659f85843c1a5bde47ca9c23cde.setContent(html_b889f2c619c94bbbb71bfe4589aa4049);
+        
+
+        marker_8d7a901648ea41429b4f0929fcb2cb42.bindPopup(popup_f1a70659f85843c1a5bde47ca9c23cde)
+        ;
+
+        
+    
+    
+            marker_8d7a901648ea41429b4f0929fcb2cb42.bindTooltip(
+                `<div>
+                     Thane Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6015a08234814ccd8f887d2fc9e7baa1 = L.marker(
+                [19.2094, 73.0939],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_9ca7ea359ada4c19b895cf50865bf74a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e7ad22e539d432db13c9b1b04c4dffa = $(`<div id="html_6e7ad22e539d432db13c9b1b04c4dffa" style="width: 100.0%; height: 100.0%;"><strong> Dombivli Office </strong></div>`)[0];
+            popup_9ca7ea359ada4c19b895cf50865bf74a.setContent(html_6e7ad22e539d432db13c9b1b04c4dffa);
+        
+
+        marker_6015a08234814ccd8f887d2fc9e7baa1.bindPopup(popup_9ca7ea359ada4c19b895cf50865bf74a)
+        ;
+
+        
+    
+    
+            marker_6015a08234814ccd8f887d2fc9e7baa1.bindTooltip(
+                `<div>
+                     Dombivli Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d4c51a4ae524ed8bd1db0eb9e41736a = L.marker(
+                [17.9487, 73.8919],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_aa42ff649b4e4bcd8e529ce53fe381e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_635e6285762b470db2a7ed4d134273ad = $(`<div id="html_635e6285762b470db2a7ed4d134273ad" style="width: 100.0%; height: 100.0%;"><strong> Wai Office </strong></div>`)[0];
+            popup_aa42ff649b4e4bcd8e529ce53fe381e4.setContent(html_635e6285762b470db2a7ed4d134273ad);
+        
+
+        marker_1d4c51a4ae524ed8bd1db0eb9e41736a.bindPopup(popup_aa42ff649b4e4bcd8e529ce53fe381e4)
+        ;
+
+        
+    
+    
+            marker_1d4c51a4ae524ed8bd1db0eb9e41736a.bindTooltip(
+                `<div>
+                     Wai Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fd7a013d36e483396f39b9745e775f4 = L.marker(
+                [21.1458, 79.0882],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_e5c6d16db3084a5dac30841a1533c0fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_113881dca7da44e1b8d7986095c309bb = $(`<div id="html_113881dca7da44e1b8d7986095c309bb" style="width: 100.0%; height: 100.0%;"><strong> Nagpur Office </strong></div>`)[0];
+            popup_e5c6d16db3084a5dac30841a1533c0fb.setContent(html_113881dca7da44e1b8d7986095c309bb);
+        
+
+        marker_4fd7a013d36e483396f39b9745e775f4.bindPopup(popup_e5c6d16db3084a5dac30841a1533c0fb)
+        ;
+
+        
+    
+    
+            marker_4fd7a013d36e483396f39b9745e775f4.bindTooltip(
+                `<div>
+                     Nagpur Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7573edd1729a40b49edf50ca07ee566c = L.marker(
+                [22.3072, 73.1812],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var icon_9c952a3eb8894da3b0d4dbdd01121c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7573edd1729a40b49edf50ca07ee566c.setIcon(icon_9c952a3eb8894da3b0d4dbdd01121c41);
+        
+    
+        var popup_f8f1b9def352420d80068f607185cfd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_485880912d364137ac6577359604df86 = $(`<div id="html_485880912d364137ac6577359604df86" style="width: 100.0%; height: 100.0%;"><strong> Vadodara Office </strong></div>`)[0];
+            popup_f8f1b9def352420d80068f607185cfd3.setContent(html_485880912d364137ac6577359604df86);
+        
+
+        marker_7573edd1729a40b49edf50ca07ee566c.bindPopup(popup_f8f1b9def352420d80068f607185cfd3)
+        ;
+
+        
+    
+    
+            marker_7573edd1729a40b49edf50ca07ee566c.bindTooltip(
+                `<div>
+                     Gujart Region Head Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5939a47dadad4220847d87ee48934242 = L.marker(
+                [17.6599, 75.9064],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_2f37596b2857427c88c278e2047a73ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cece9185e3ee43839a474b3bf4158de5 = $(`<div id="html_cece9185e3ee43839a474b3bf4158de5" style="width: 100.0%; height: 100.0%;"><strong> Solapur Office </strong></div>`)[0];
+            popup_2f37596b2857427c88c278e2047a73ba.setContent(html_cece9185e3ee43839a474b3bf4158de5);
+        
+
+        marker_5939a47dadad4220847d87ee48934242.bindPopup(popup_2f37596b2857427c88c278e2047a73ba)
+        ;
+
+        
+    
+    
+            marker_5939a47dadad4220847d87ee48934242.bindTooltip(
+                `<div>
+                     Solapur Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5fb419bed094a9eacd83f9304699f81 = L.marker(
+                [16.705, 74.2433],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_0eed524ea259462494febb275f693907 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92352b557b514b75adcfe28b4d8219f6 = $(`<div id="html_92352b557b514b75adcfe28b4d8219f6" style="width: 100.0%; height: 100.0%;"><strong> Kolhapur Office </strong></div>`)[0];
+            popup_0eed524ea259462494febb275f693907.setContent(html_92352b557b514b75adcfe28b4d8219f6);
+        
+
+        marker_c5fb419bed094a9eacd83f9304699f81.bindPopup(popup_0eed524ea259462494febb275f693907)
+        ;
+
+        
+    
+    
+            marker_c5fb419bed094a9eacd83f9304699f81.bindTooltip(
+                `<div>
+                     Kolhapur Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04a66b4c70de4309846a76600b438fdd = L.marker(
+                [15.8497, 74.4977],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_11e52f2e8bcb49e4a74534cb9814d423 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23e239087fb144f7a765c5cc049c2e86 = $(`<div id="html_23e239087fb144f7a765c5cc049c2e86" style="width: 100.0%; height: 100.0%;"><strong> Belgaum Office </strong></div>`)[0];
+            popup_11e52f2e8bcb49e4a74534cb9814d423.setContent(html_23e239087fb144f7a765c5cc049c2e86);
+        
+
+        marker_04a66b4c70de4309846a76600b438fdd.bindPopup(popup_11e52f2e8bcb49e4a74534cb9814d423)
+        ;
+
+        
+    
+    
+            marker_04a66b4c70de4309846a76600b438fdd.bindTooltip(
+                `<div>
+                     Belgaum Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e24e32a6dd6144d6a365a816c658e617 = L.marker(
+                [12.9716, 77.5946],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var icon_820f22ebd68e4d769730d1bdcf535fe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e24e32a6dd6144d6a365a816c658e617.setIcon(icon_820f22ebd68e4d769730d1bdcf535fe7);
+        
+    
+        var popup_254c9a66daf746d88c21a3115eaafed6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c626eb71a9641bdbfe00d976e63b1ba = $(`<div id="html_4c626eb71a9641bdbfe00d976e63b1ba" style="width: 100.0%; height: 100.0%;"><strong> Bangloru Office </strong></div>`)[0];
+            popup_254c9a66daf746d88c21a3115eaafed6.setContent(html_4c626eb71a9641bdbfe00d976e63b1ba);
+        
+
+        marker_e24e32a6dd6144d6a365a816c658e617.bindPopup(popup_254c9a66daf746d88c21a3115eaafed6)
+        ;
+
+        
+    
+    
+            marker_e24e32a6dd6144d6a365a816c658e617.bindTooltip(
+                `<div>
+                     Karnataka Region Head Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a5da0fa31c0403ba261f862863aee5f = L.marker(
+                [22.7196, 75.8577],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_6a27de51ef5e450ebf56e6463be7eef8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8d6dd75074748388c0d4431bf2f4e33 = $(`<div id="html_c8d6dd75074748388c0d4431bf2f4e33" style="width: 100.0%; height: 100.0%;"><strong> Indore Office </strong></div>`)[0];
+            popup_6a27de51ef5e450ebf56e6463be7eef8.setContent(html_c8d6dd75074748388c0d4431bf2f4e33);
+        
+
+        marker_1a5da0fa31c0403ba261f862863aee5f.bindPopup(popup_6a27de51ef5e450ebf56e6463be7eef8)
+        ;
+
+        
+    
+    
+            marker_1a5da0fa31c0403ba261f862863aee5f.bindTooltip(
+                `<div>
+                     Indore Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bb89651dbbb48338dc8a32eb0ded87c = L.marker(
+                [26.2183, 78.1828],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_10ff5e77d63841a8ae3d477618193949 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_446025d3e666486aa2180aa681a38875 = $(`<div id="html_446025d3e666486aa2180aa681a38875" style="width: 100.0%; height: 100.0%;"><strong> Gwalior Office </strong></div>`)[0];
+            popup_10ff5e77d63841a8ae3d477618193949.setContent(html_446025d3e666486aa2180aa681a38875);
+        
+
+        marker_3bb89651dbbb48338dc8a32eb0ded87c.bindPopup(popup_10ff5e77d63841a8ae3d477618193949)
+        ;
+
+        
+    
+    
+            marker_3bb89651dbbb48338dc8a32eb0ded87c.bindTooltip(
+                `<div>
+                     Gwalior Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_723e381ed4874dcb95ebf5017e8a4e81 = L.marker(
+                [28.7041, 77.1025],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+            var icon_808331ccef3545bfab116ac7b8751d33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_723e381ed4874dcb95ebf5017e8a4e81.setIcon(icon_808331ccef3545bfab116ac7b8751d33);
+        
+    
+        var popup_46ed57ac80924b76b8fc710926c66822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0105ec63e3364faea786a23451043372 = $(`<div id="html_0105ec63e3364faea786a23451043372" style="width: 100.0%; height: 100.0%;"><strong> Delhi Office </strong></div>`)[0];
+            popup_46ed57ac80924b76b8fc710926c66822.setContent(html_0105ec63e3364faea786a23451043372);
+        
+
+        marker_723e381ed4874dcb95ebf5017e8a4e81.bindPopup(popup_46ed57ac80924b76b8fc710926c66822)
+        ;
+
+        
+    
+    
+            marker_723e381ed4874dcb95ebf5017e8a4e81.bindTooltip(
+                `<div>
+                     Delhi Region Head Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02f7ae962c034d5786bcc549e8eba932 = L.marker(
+                [22.4707, 70.0577],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_f315cc24ae5c41d6bf9b800d622dbec3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99527b0c81324fdeaa6e3431bf1b206c = $(`<div id="html_99527b0c81324fdeaa6e3431bf1b206c" style="width: 100.0%; height: 100.0%;"><strong> Jamnagar Office </strong></div>`)[0];
+            popup_f315cc24ae5c41d6bf9b800d622dbec3.setContent(html_99527b0c81324fdeaa6e3431bf1b206c);
+        
+
+        marker_02f7ae962c034d5786bcc549e8eba932.bindPopup(popup_f315cc24ae5c41d6bf9b800d622dbec3)
+        ;
+
+        
+    
+    
+            marker_02f7ae962c034d5786bcc549e8eba932.bindTooltip(
+                `<div>
+                     Jamnagar Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40da339c364f40e89c8d4556140a00a3 = L.marker(
+                [22.2442, 68.9685],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_080315e18b704f09b266a7ea8789a1a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f6958af193d4f29a3322b0725a25cc0 = $(`<div id="html_0f6958af193d4f29a3322b0725a25cc0" style="width: 100.0%; height: 100.0%;"><strong> Dwarka Office </strong></div>`)[0];
+            popup_080315e18b704f09b266a7ea8789a1a7.setContent(html_0f6958af193d4f29a3322b0725a25cc0);
+        
+
+        marker_40da339c364f40e89c8d4556140a00a3.bindPopup(popup_080315e18b704f09b266a7ea8789a1a7)
+        ;
+
+        
+    
+    
+            marker_40da339c364f40e89c8d4556140a00a3.bindTooltip(
+                `<div>
+                     Dwarka Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f133780e9dd0475e9e592fac67b63bb9 = L.marker(
+                [22.3039, 70.8022],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_b0190a674b024511866937d1c727e3a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_483637054669407ba4eebe25e0a148a0 = $(`<div id="html_483637054669407ba4eebe25e0a148a0" style="width: 100.0%; height: 100.0%;"><strong> Rajkot Office </strong></div>`)[0];
+            popup_b0190a674b024511866937d1c727e3a1.setContent(html_483637054669407ba4eebe25e0a148a0);
+        
+
+        marker_f133780e9dd0475e9e592fac67b63bb9.bindPopup(popup_b0190a674b024511866937d1c727e3a1)
+        ;
+
+        
+    
+    
+            marker_f133780e9dd0475e9e592fac67b63bb9.bindTooltip(
+                `<div>
+                     Rajkot Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1852bea19e4497780fc6ec7416b8981 = L.marker(
+                [22.3039, 70.8022],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_8f361de8241049f8a9ae57db20f763a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad2c814c7c524579a4582bdfbe30e98c = $(`<div id="html_ad2c814c7c524579a4582bdfbe30e98c" style="width: 100.0%; height: 100.0%;"><strong> Rajkot Office </strong></div>`)[0];
+            popup_8f361de8241049f8a9ae57db20f763a3.setContent(html_ad2c814c7c524579a4582bdfbe30e98c);
+        
+
+        marker_f1852bea19e4497780fc6ec7416b8981.bindPopup(popup_8f361de8241049f8a9ae57db20f763a3)
+        ;
+
+        
+    
+    
+            marker_f1852bea19e4497780fc6ec7416b8981.bindTooltip(
+                `<div>
+                     Rajkot Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3dfbda8291fc4f19b468f8ab542fc569 = L.marker(
+                [23.0225, 72.5714],
+                {}
+            ).addTo(map_05c78658773e43d1900bf4490a6796ee);
+        
+    
+        var popup_bfc4a7741c93402ba40dabe3a254cc41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6af65672455b470792c878f38d15f736 = $(`<div id="html_6af65672455b470792c878f38d15f736" style="width: 100.0%; height: 100.0%;"><strong> Ahmedabad Office </strong></div>`)[0];
+            popup_bfc4a7741c93402ba40dabe3a254cc41.setContent(html_6af65672455b470792c878f38d15f736);
+        
+
+        marker_3dfbda8291fc4f19b468f8ab542fc569.bindPopup(popup_bfc4a7741c93402ba40dabe3a254cc41)
+        ;
+
+        
+    
+    
+            marker_3dfbda8291fc4f19b468f8ab542fc569.bindTooltip(
+                `<div>
+                     Ahmedabad Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
